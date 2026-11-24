@@ -6,7 +6,12 @@
   "compatibility_date": "2026-11-16",
 
   // Le jeu (index.html, logos…) est servi tel quel ; seules les routes /api/* passent par le Worker
-  
+    "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+
 
   // Deux « classes » Durable Objects :
   //  - Matchmaker : un seul exemplaire mondial, il range les joueurs dans des parties
